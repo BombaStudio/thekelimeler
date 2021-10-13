@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .pro {
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+            .pro li {
+                color: #000000;
+                width: 300px;
+                height: 300px;
+                float: left;
+            }
+            /*
+            .pro li div {
+                width: 100%;
+                height: 100%;
+                background-image: none;
+                background-color: rgb(188, 26, 26);
+            }
+            
+            .en {
+                position: absolute;
+                
+            }
+            .tr {
+                transform: translate3d(0px, 0px, -21px);
+                transform-style: preserve-3d;
+            }
+            */
+            .flip-card {
+                background-color: transparent;
+                width: 300px;
+                height: 300px;
+                perspective: 1000px;
+            }
+
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            }
+
+            .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .flip-card-front {
+                background-color: #bbb;
+                color: black;
+            }
+
+            .flip-card-back {
+                background-color: #2980b9;
+                color: white;
+                transform: rotateY(180deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul class="pro">
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Afraid</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Korkmak</h1> 
+                            <p>
+                                She gets afraid when she hears thunder
+                                <br/>
+                                (Gök gürültüsü duyduğunda korkar)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Because</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Çünkü</h1> 
+                            <p>
+                                I will back home because I have forgot my keys
+                                <br/>
+                                (Eve döneceğim çünkü anahtarlarımı unuttum)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Beginner</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Acemi</h1> 
+                            <p>
+                                She's just beginner, don't be too hard on her
+                                <br/>
+                                (O sadece acemi, ona fazla yüklenme)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Every</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Her</h1> 
+                            <p>
+                                He is happy every God's day
+                                <br/>
+                                (O her Allah'ın günü mutlu)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Extra</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Ekstra</h1> 
+                            <p>
+                                I worked extra for pass the exam
+                                <br/>
+                                (Sınavı geçmek için ekstra çalıştım)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Feeling</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Duygu</h1> 
+                            <p>
+                                I feeling some bad
+                                <br/>
+                                (Biraz kötü hissediyorum)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Practice</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Uygulama</h1> 
+                            <p>
+                                He done practice for play this game on yesterday
+                                <br/>
+                                (Dün bu oyunu oynamak için pratik yaptı)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="ele">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Ready</h1>
+                            
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Hazır</h1> 
+                            <p>
+                                Are you ready for this?
+                                <br/>
+                                (Bunun için hazır mısın?)
+                            </p> 
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </body>
+</html>
